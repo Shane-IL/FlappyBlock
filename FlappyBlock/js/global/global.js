@@ -3,10 +3,9 @@
  */
 var Global = {
     Constants: {
-        InitialSnakeLength: 5,
-        InitialSnakePosition: {top: 20, left: 20},
-        GridHeight: 40,
-        GridWidth: 40,
+        InitialFlapperPosition: {top: 5, left: 2},
+        GridHeight: 10,
+        GridWidth: 8,
         GridCellWidth: 1,
         GridCellHeight: 1
     },
@@ -23,9 +22,9 @@ var Global = {
         Down: 4
     },
     NodeClasses: {
-        foodClass: 'food-class',
+        flapperClass: 'flapper-class',
         holeClass: 'hole-class',
-        snakeClass: 'snake-class',
+        snakeClass: 'pipes-class',
         defaultClass: 'default-class'
     }
 };

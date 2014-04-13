@@ -10,6 +10,10 @@ var Holes = new function () {
         return  _holes;
     };
 
+    this.newHoles = function(top){
+
+    };
+
     this.refreshHoles = function(){
         var score = GameLogic.getScore();
         if(score%4 ===0){
@@ -17,7 +21,7 @@ var Holes = new function () {
             do {
                 position.top = Math.floor((Math.random() * 39));
                 position.left = Math.floor((Math.random() * 39));
-            } while (Snake.occupiesNode(position) || position===Food.getPosition());
+            } while (Pipes.occupiesNode(position) || position===Flapper.getPosition());
             _holes.push({position: position});
         }
         _this.renderHoles();

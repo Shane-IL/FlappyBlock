@@ -10,14 +10,14 @@
  options = $.extend({
  defaultClass: "nodeClass",
  snakeClass: "snakeClass",
- foodClass: "foodClass"
+ flapperClass: "foodClass"
 
  }, options);
 
 
  var defaultClass = options.defaultClass;
  var snakeClass = options.snakeClass;
- var foodClass = options.foodClass;
+ var foodClass = options.flapperClass;
  var currentClass = options.class;
 
 

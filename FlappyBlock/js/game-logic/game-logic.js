@@ -80,8 +80,8 @@ var GameLogic = new function () {
     this.resetGame = function () {
         clearInterval(ticker);
         _this.setSpeed(200);
-        Snake.refreshSnake();
-        Food.refreshFood();
+        Pipes.refreshSnake();
+        Flapper.refreshFlapper();
         Holes.clearHoles();
         _score = 0;
         this.gameLoop();
@@ -113,15 +113,15 @@ var GameLogic = new function () {
 
     this.iterate = function () {
         _dirChanges = 0;
-        Snake.hasEaten();
+        Pipes.hasEaten();
         ScreenButtonManager.listen();
         MoveButtonManager.listen();
         _this.evalHiScore(_score);
         DisplayManager.update();
-        if (!Snake.isAlive()) {
+        if (!Pipes.isAlive()) {
             _this.stopGame();
         }
-        Snake.move(_currentDirection);
+        Pipes.move(_currentDirection);
     }
 
 

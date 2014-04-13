@@ -37,14 +37,14 @@ var ClassManager = new function () {
  options = $.extend({
  defaultClass: "nodeClass",
  snakeClass: "snakeClass",
- foodClass: "foodClass"
+ flapperClass: "flapperClass"
 
  }, options);
 
 
  var defaultClass = options.defaultClass;
  var snakeClass = options.snakeClass;
- var foodClass = options.foodClass;
+ var flapperClass = options.flapperClass;
  var currentClass = options.class;
 
 
