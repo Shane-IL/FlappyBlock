@@ -1,0 +1,41 @@
+.row-class{
+    position: relative;
+    height: 10px;
+}
+
+.default-class{
+    background-color: white;
+    position: relative;
+}
+
+.food-class{
+    background-color: red;
+    border-radius: 5px;
+}
+
+.snake-class{
+    background-color: green;
+    border-radius: 3px;
+}
+
+.hole-class{
+    background-color: black;
+    border-radius: 5px;
+}
+
+#game-board .nodeClass{
+
+}
+
+#game-board .snakeClass{
+
+}
+
+#game-board .node-class.food-class{
+    background-color: red;
+}
+
+#game-board .nodeClass.snake-class{
+    background-color: green;
+}
+
