@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d93e67b-ded0-4be3-bdb3-842aaa680568" name="Default" comment="Commit">
-      <change type="DELETED" beforePath="C:\Users\Shane\Documents\GitHub\FlappyBlock\FlappyBlock\for-later\div-string-builder.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Shane\Documents\GitHub\FlappyBlock\FlappyBlock\js\board-manager\board-manager.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Shane\Documents\GitHub\FlappyBlock\FlappyBlock\js\board-manager\board-manager.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Shane\Documents\GitHub\FlappyBlock\FlappyBlock\js\class-manager\class-manager.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Shane\Documents\GitHub\FlappyBlock\FlappyBlock\js\holes-logic\holes-logic.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Shane\Documents\GitHub\FlappyBlock\FlappyBlock\js\multi-class-manager\multi-class-manager.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/flapper/flapper.js" afterPath="$PROJECT_DIR$/js/flapper/flapper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/flappy-home.html" afterPath="$PROJECT_DIR$/flappy-home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/global/global.js" afterPath="$PROJECT_DIR$/js/global/global.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/pipes/pipes.js" afterPath="$PROJECT_DIR$/js/pipes/pipes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="3d93e67b-ded0-4be3-bdb3-842aaa680568" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SnakeProj1.iws" />
@@ -508,6 +497,11 @@
       <created>1387697358093</created>
       <updated>1387697358093</updated>
     </task>
+    <task id="LOCAL-00001" summary="Commit">
+      <created>1398161094449</created>
+      <updated>1398161094449</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
