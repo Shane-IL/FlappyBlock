@@ -23,7 +23,6 @@ var Global = {
     },
     NodeClasses: {
         flapperClass: 'flapper-class',
-        holeClass: 'hole-class',
         snakeClass: 'pipes-class',
         defaultClass: 'default-class'
     }

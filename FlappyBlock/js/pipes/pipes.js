@@ -6,71 +6,20 @@ var Pipes = new function() {
     var _this = this;
     var _pipes=[];
     var _tailNode;
-    var _gapcount = 4;
+    var _gapcount = 2;
 
     this.newPipe = function(){
-      _pipes.push({column1: {top: Global.Constants.GridWidth-3, left: 0}})
+        var gap = Math.floor(Math.random()*(Global.Constants.GridHeight-1)+1);
+            for(var i=0; i<Global.Constants.GridHeight; i++){
+                if (i != gap) {
+                    _pipes.push({position: {top: i, left: Global.Constants.GridWidth}})
+                }
+            }
     };
 
-    this.refreshSnake = function(){
-        GameLogic.setCurrentDirection(Global.SnakeDirections.Left);
-        if(_pipes.length>0){
-            _this.resetSnakeNodes();
-        }
-        _pipes.length =0;
-        for (var i = 0; i < Global.Constants.InitialSnakeLength; i++) {
-            _pipes.push(
-                {position:{top: Global.Constants.InitialSnakePosition.top, left: Global.Constants.InitialSnakePosition.left+i}})
-        }
-        this.renderAll();
 
-    };
 
-    this.occupiesNode = function(position){
-          for(var i=0; i<_pipes.length; i++){
-              if($.equalObjects(position, _pipes[i].position))return true;
-          }
-        return false;
-    };
 
-    this.eatingSelf = function(position){
-        for(var i=1; i<_pipes.length; i++){
-            if($.equalObjects((position), _pipes[i].position))return true;
-        }
-        return false;
-    };
-
-    this.renderAll = function(){
-        for(var i=0; i<_pipes.length; i++){
-            BoardManager.setClassToNode(_pipes[i].position,Global.NodeClasses.snakeClass);
-        }
-    };
-
-    this.resetSnakeNodes = function(){
-        for(var i=0; i<_pipes.length; i++){
-            BoardManager.resetNode(_pipes[i].position);
-        }
-    };
-
-    this.isAlive = function(){
-        if(_this.eatingSelf(_pipes[0].position)) return false;
-        else if(GameLogic.isWall(_pipes[0].position)) return false;
-        else if (Holes.inHole(_pipes[0].position)) return false;
-        else return true;
-    };
-
-    this.hasEaten = function(){
-        if($.equalObjects(Flapper.getPosition(), _pipes[0].position)){
-            Flapper.refreshFlapper();
-            Holes.refreshHoles();
-            _growing = 3;
-            GameLogic.incrementScore();
-        }
-    };
-
-    this.getSnakeArray = function(){
-        return _pipes;
-    };
 
     this.move = function(direction){
         _tailNode= _pipes[_pipes.length-1];

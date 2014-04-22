@@ -12,16 +12,21 @@ var Flapper = new function () {
     };
 
     this.render = function(){
-
+        BoardManager.setClassToNode(_position, Global.NodeClasses.flapperClass);
     };
 
     this.refreshFlapper = function () {
-        if (!Pipes.occupiesNode(_position))BoardManager.setClassToNode(_position, Global.NodeClasses.defaultClass);
-        do {
-            _position.top = Math.floor((Math.random() * Global.Constants.GridHeight-1));
-            _position.left = Math.floor((Math.random() * Global.Constants.GridWidth-1));
-        } while (Pipes.occupiesNode(_position) || Holes.inHole(_position));
-        BoardManager.setClassToNode(_position, Global.NodeClasses.flapperClass);
+        BoardManager.resetNode(_position);
+        _position = Global.Constants.InitialFlapperPosition;
+
+    };
+
+    this.flap = function(){
+        _position.top += 1;
+    };
+
+    this.sink = function(){
+        _position.top += -1;
     };
 
 
